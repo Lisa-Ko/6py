@@ -1,0 +1,9 @@
+from random import randint
+list1 = [randint(-10, 10) for i in range(20)]
+print(list1)
+min_number = int(input("Введите вверхнее значение: "))
+max_number = int(input("Введите нижнее значение: "))
+print("индексы элементов списка, значения которых принадлежат заданному диапазону равны:")
+for i in range(len(list1)):
+    if min_number <= list1[i] <= max_number:
+        print(i)
